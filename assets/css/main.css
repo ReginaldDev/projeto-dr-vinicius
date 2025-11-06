@@ -1,0 +1,106 @@
+/* assets/css/main.css */
+
+@font-face {
+  font-family: "Maven Pro";
+  src: url("~/assets/fonts/MavenPro-VariableFont_wght.ttf") format("truetype");
+  /* Como é uma fonte variável, definimos o range de "pesos" que ela suporta */
+  font-weight: 400 900;
+  font-display: swap;
+}
+/* :root é onde definimos variáveis globais */
+:root {
+  --font-heading: "Maven Pro", sans-serif;
+  --font-body: "Maven Pro", sans-serif;
+  --primary-color: #343180;
+  --secondary-color: #aec6ea;
+  --dark-text: #333333;
+  --light-gray: #f4f4f4;
+  --white: #ffffff;
+}
+
+/* --- CORREÇÃO DE OVERFLOW GLOBAL --- */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  position: relative; /* Necessário para o overflow-x funcionar de forma confiável */
+}
+
+/* --- ESTILOS GLOBAIS (MOBILE FIRST) --- */
+body {
+  font-family: var(--font-body); /* <-- APLICA A FONTE DE TEXTO */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--dark-text); /* <-- APLICA A COR DE TEXTO */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* APLICA A FONTE DE TÍTULO */
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem; /* 32px */
+}
+
+h2 {
+  font-size: 1.75rem; /* 28px */
+}
+
+.cta-button {
+  background-color: var(--primary-color); /* <-- USA A VARIÁVEL DE COR */
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* --- BREAKPOINTS (DESKTOP) --- */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 60px 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  h2 {
+    font-size: 2rem; /* 32px */
+  }
+
+  .cta-button {
+    display: inline-block;
+    width: auto;
+  }
+}
