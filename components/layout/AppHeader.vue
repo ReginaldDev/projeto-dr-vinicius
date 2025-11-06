@@ -192,6 +192,15 @@ onUnmounted(() => {
 .cta-mobile {
   display: block;
   width: 80%;
+
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.cta-mobile:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 .cta-desktop {
   display: none;
