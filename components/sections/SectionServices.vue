@@ -54,10 +54,14 @@ onMounted(() => {
           </div>
           <div class="process-image">
             <!-- Substitua pela imagem que desejar -->
-            <img
-              src="/assets/img/avaliacao.jpg"
-              alt="Avaliação Detalhada"
-            />
+            <NuxtPicture
+              src="/img/avaliacao.jpg"
+              alt="Foto de Avaliação Detalhada"
+              :img-attrs="{ style: 'width:100%;height:auto;border-radius:8px;' }"
+              format="webp"
+              quality="80"
+            /> 
+            
           </div>
         </div>
 
@@ -72,10 +76,13 @@ onMounted(() => {
             </p>
           </div>
           <div class="process-image">
-            <img
-              src="/assets/img/diagnostico.jpg"
-              alt="Plano Terapêutico"
-            />
+            <NuxtPicture
+              src="/img/diagnostico.jpg"
+              alt="Foto de Diagnostico"
+              :img-attrs="{ style: 'width:100%;height:auto;border-radius:8px;' }"
+              format="webp"
+              quality="80"
+            /> 
           </div>
         </div>
 
@@ -90,10 +97,13 @@ onMounted(() => {
             </p>
           </div>
           <div class="process-image">
-            <img
-              src="/assets/img/acompanhamento.jpg"
-              alt="Acompanhamento Contínuo"
-            />
+            <NuxtPicture
+              src="/img/acompanhamento.jpg"
+              alt="Foto de Acompanhamento Contínuo"
+              :img-attrs="{ style: 'width:100%;height:auto;border-radius:8px;' }"
+              format="webp"
+              quality="80"
+            /> 
           </div>
         </div>
       </div>
@@ -237,7 +247,7 @@ onMounted(() => {
   font-size: 1.15rem;
   max-width: 600px;
   margin: -20px auto 40px auto;
-  color: #555;
+  color: var(--dark-text);
 }
 
 /* --- ESTILO "COMO FUNCIONA" (ATUALIZADO) --- */

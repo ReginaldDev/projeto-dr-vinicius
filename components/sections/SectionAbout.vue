@@ -4,11 +4,13 @@
 
     <div class="about-content">
       <div class="about-image" id="about-image">
-        <img
-            src="/assets/img/foto-about2.jpg"
-            alt="Logo Dr. Vinicius Sanches - Saúde Mental"
-            class="logo-img"
-          />
+        <NuxtPicture
+          src="/img/foto-about2.jpg"
+          alt="Foto do Dr. Vinicius Sanches Bersanete"
+          :img-attrs="{ style: 'width:100%;height:auto;border-radius:5px;' }"
+          format="webp"
+          quality="80"
+        />
       </div>
 
       <div class="about-text">
@@ -67,7 +69,6 @@
 
 .about-image {
   flex: 1;
-  
 }
 
 .about-text {

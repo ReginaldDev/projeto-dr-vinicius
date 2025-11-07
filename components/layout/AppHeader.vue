@@ -7,6 +7,8 @@
             src="/assets/img/logo-fullname.png"
             alt="Logo Dr. Vinicius Sanches - Saúde Mental"
             class="logo-img"
+            format="webp"
+            quality="80"
           />
         </NuxtLink>
       </div>
@@ -37,7 +39,7 @@
         Agendar Consulta
       </a>
 
-      <button class="header-mobile-icon" @click="toggleMenu">
+      <button class="header-mobile-icon" @click="toggleMenu" aria-label="Abrir ou fechar menu de navegação">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>

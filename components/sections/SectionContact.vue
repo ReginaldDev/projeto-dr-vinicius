@@ -165,6 +165,11 @@ section{
 .form-button {
   width: 100%;
 }
+.form-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--darktext);
+  transition: background-color 0.4s ease;
+}
 
 /* Mensagens de Feedback */
 .success {
@@ -208,6 +213,7 @@ section{
 }
 .doctoralia-button:hover {
   background-color: #007a6e;
+  transition: background-color 0.4s ease;
 }
 
 /* --- DESKTOP --- */

@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["@/assets/css/main.css"],
 
+  modules:[
+    '@nuxt/image',
+  ],
   app: {
     head: {
       title: 'Dr. Vinicius Sanches Bersanete - Psiquiatra', // Título padrão
