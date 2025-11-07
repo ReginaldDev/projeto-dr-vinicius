@@ -3,7 +3,7 @@
     <h2>Conheça o Dr. Vinicius Sanches Bersanete</h2>
 
     <div class="about-content">
-      <div class="about-image">
+      <div class="about-image" id="about-image">
         <img
             src="/assets/img/foto-about2.jpg"
             alt="Logo Dr. Vinicius Sanches - Saúde Mental"
@@ -67,20 +67,7 @@
 
 .about-image {
   flex: 1;
-}
-
-.image-placeholder {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* Quadrado */
-  background-color: var(--light-gray);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: var(--font-body);
-  color: #999;
-  border: 2px dashed var(--secondary-color);
+  
 }
 
 .about-text {
@@ -133,7 +120,7 @@
   .about-image {
     position: sticky;
     top: 120px; /* (altura do header + um espaço) */
-    align-self: flex-start; /* Alinha no topo */
+    align-self: center; /* Alinha no topo */
   }
 
   .about-text p {

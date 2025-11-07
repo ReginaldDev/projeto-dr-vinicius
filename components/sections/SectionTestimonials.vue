@@ -85,8 +85,10 @@
 
 <style scoped>
 #depoimentos {
-  background-color: var(--light-gray);
+  max-width: 100%;
+  background-color: var(--primary-color);
   padding: 60px 20px;
+  color: var(--white);
 }
 
 .section-subtitle {
@@ -94,7 +96,7 @@
   font-size: 1.15rem;
   max-width: 600px;
   margin: -20px auto 40px auto;
-  color: #555;
+  color: var(--light-gray);
 }
 
 .testimonials-grid {

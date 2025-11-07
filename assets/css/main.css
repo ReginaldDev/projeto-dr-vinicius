@@ -13,6 +13,7 @@
   --font-body: "Maven Pro", sans-serif;
   --primary-color: #343180;
   --secondary-color: #aec6ea;
+  --third-color: #343180e8;
   --dark-text: #333333;
   --light-gray: #f4f4f4;
   --white: #ffffff;
@@ -23,6 +24,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   position: relative; /* Necessário para o overflow-x funcionar de forma confiável */

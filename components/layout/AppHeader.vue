@@ -14,6 +14,7 @@
       <div class="nav-links" :class="{ 'is-open': isMenuOpen }">
         <ul>
           <li @click="closeMenu"><a href="#sobre">Sobre</a></li>
+          <li @click="closeMenu"><a href="#comoFunciona">Como funciona?</a></li>
           <li @click="closeMenu"><a href="#servicos">Serviços</a></li>
           <li @click="closeMenu"><a href="#depoimentos">Depoimentos</a></li>
           <li @click="closeMenu"><a href="#contato">Contato</a></li>
@@ -185,7 +186,6 @@ onUnmounted(() => {
 }
 .nav-links a {
   text-decoration: none;
-  color: #333;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -193,14 +193,15 @@ onUnmounted(() => {
   display: block;
   width: 80%;
 
-  background-color: transparent;
+  background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 .cta-mobile:hover {
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: var(--secondary-color);
+  color: var(--darktext);
+  
 }
 .cta-desktop {
   display: none;
@@ -257,8 +258,18 @@ onUnmounted(() => {
   .nav-links a {
     font-size: 1rem;
   }
+  .nav-links a:hover{
+    font-size: 1.02rem;
+    transition: 0.5ms;
+    color: var(--darktext);
+  }
   .cta-mobile {
     display: none;
+  }
+  .cta-desktop:hover {
+  background-color: var(--secondary-color);
+  color: var(--darktext);
+  transition: background-color 0.4s ease;
   }
   .cta-desktop {
     display: block;
