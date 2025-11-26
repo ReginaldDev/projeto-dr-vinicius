@@ -3,51 +3,56 @@
     <h2>Conheça o Dr. Vinicius Sanches Bersanete</h2>
 
     <div class="about-content">
+      
+      <!-- COLUNA DA FOTO -->
       <div class="about-image" id="about-image">
-        <NuxtPicture
-          src="/img/foto-about2.jpg"
-          alt="Foto do Dr. Vinicius Sanches Bersanete"
-          :img-attrs="{ style: 'width:100%;height:auto;border-radius:5px;' }"
-          format="webp"
-          quality="80"
-        />
+        
+        <!-- 
+          IMAGEM 1: VERSÃO MOBILE 
+          Aparece apenas em telas pequenas (celulares)
+        -->
+        <div class="image-display mobile-only">
+          <NuxtPicture
+            src="/img/foto-mobile.png"
+            alt="Dr. Vinicius Sanches (Mobile)"
+            :img-attrs="{ style: 'width:100%; height:auto; border-radius:8px;' }"
+            format="webp"
+            quality="80"
+          />
+        </div>
+
+        <!-- 
+          IMAGEM 2: VERSÃO DESKTOP 
+          Aparece apenas em telas maiores (tablets e PC)
+        -->
+        <div class="image-display desktop-only">
+          <NuxtPicture
+            src="/img/foto-desktop.jpg"
+            alt="Dr. Vinicius Sanches (Desktop)"
+            :img-attrs="{ style: 'width:100%; height:auto; border-radius:8px;' }"
+            format="webp"
+            quality="80"
+          />
+        </div>
+
       </div>
 
+      <!-- COLUNA DE TEXTO -->
       <div class="about-text">
         <p>
-          Sou médico psiquiatra com experiência clínica ampla e sólida formação
-          voltada à escuta qualificada e ao cuidado ético e individualizado em
-          saúde mental.
+          Sou médico psiquiatra com atuação voltada a quadros que exigem atenção cuidadosa e manejo especializado. Atendo adultos que convivem com ansiedade persistente, depressão que não respondeu aos primeiros tratamentos, oscilações de humor que interferem no cotidiano, dificuldades importantes de atenção, irritabilidade que desgasta vínculos, alterações de sono e uso disfuncional de substâncias.
         </p>
         <p>
-          Após anos atuando em diferentes contextos da medicina (da atenção
-          básica à urgência e ao cuidado domiciliar) decidi me dedicar
-          exclusivamente à especialidade que sempre me fascinou: a psiquiatria.
+          Minha prática reúne investigação clínica aprofundada e escuta atenta, permitindo compreender sua história com precisão e responsabilidade. O diagnóstico é construído de forma criteriosa e o tratamento é planejado com clareza, sempre em alinhamento com sua realidade e seus objetivos.
         </p>
         <p>
-          Entendo que cada sofrimento psíquico é único e que nenhum diagnóstico
-          define, por si só, a complexidade de uma pessoa. Por isso, meu
-          trabalho parte da escuta atenta, do respeito à singularidade de cada
-          paciente e do uso criterioso do conhecimento científico.
-        </p>
-        <p>
-          Minha prática é pautada por diretrizes atualizadas da psiquiatria, com
-          base em obras como Kaplan & Sadock, Stahl, Dalgalarrondo, The Maudsley
-          Guidelines e UpToDate. Acredito que técnica sem empatia é insuficiente
-          e empatia sem embasamento técnico pode ser arriscada.
-        </p>
-        <p>
-          Se você sente que precisa de ajuda, tem dúvidas sobre sintomas, ou
-          busca um espaço de cuidado sério e acolhedor, estou à disposição. O
-          primeiro passo pode ser difícil mas não precisa ser solitário.
+          O acompanhamento é contínuo e orientado para oferecer estabilidade emocional, clareza de pensamento e recuperação da funcionalidade com segurança e discrição. Aqui, cada etapa recebe tempo e atenção genuína para que o cuidado avance de forma consistente e confiável.
         </p>
 
         <div class="credentials-box">
           <h3>Formação e Qualificações</h3>
           <p>
-            Especialista em Psiquiatria, com Residência Médica pela Secretaria
-            de Saúde do Estado de São Paulo, no Hospital das Clínicas Luzia de
-            Pinho Melo.
+            Residência Médica em Psiquiatria credenciada pela Secretaria de Saúde do Estado de São Paulo, com RQE ativo e reconhecido pelo Conselho Federal de Medicina.
           </p>
           <ul>
             <li><strong>CRMSP 193281</strong></li>
@@ -71,8 +76,16 @@
   flex: 1;
 }
 
+/* Lógica de troca de imagem (Mobile First) */
+.mobile-only {
+  display: block; /* Mostra a imagem mobile */
+}
+.desktop-only {
+  display: none; /* Esconde a imagem desktop */
+}
+
 .about-text {
-  flex: 1.5; /* O texto ocupa mais espaço */
+  flex: 1.5;
 }
 
 .about-text p {
@@ -83,14 +96,14 @@
 
 .credentials-box {
   background-color: var(--light-gray);
-  border-left: 5px solid var(--primary-color); /* Destaque com a cor primária */
+  border-left: 5px solid var(--primary-color);
   padding: 25px;
   margin-top: 30px;
   border-radius: 0 8px 8px 0;
 }
 
 .credentials-box h3 {
-  text-align: left; /* Alinha o h3 da caixa à esquerda */
+  text-align: left;
   margin-top: 0;
   margin-bottom: 15px;
   color: var(--primary-color);
@@ -117,11 +130,18 @@
     gap: 40px;
   }
 
-  /* Efeito 'sticky': A foto "gruda" na tela enquanto o usuário rola o texto */
+  /* Inverte a visibilidade das imagens */
+  .mobile-only {
+    display: none; /* Esconde mobile */
+  }
+  .desktop-only {
+    display: block; /* Mostra desktop */
+  }
+
   .about-image {
     position: sticky;
-    top: 120px; /* (altura do header + um espaço) */
-    align-self: center; /* Alinha no topo */
+    top: 120px;
+    align-self: center;
   }
 
   .about-text p {

@@ -4,7 +4,7 @@
       <div class="logo">
         <NuxtLink to="/">
           <img
-            src="/assets/img/logo-fullname.png"
+            src="/assets/img/Logotipo02.png"
             alt="Logo Dr. Vinicius Sanches - Saúde Mental"
             class="logo-img"
             format="webp"

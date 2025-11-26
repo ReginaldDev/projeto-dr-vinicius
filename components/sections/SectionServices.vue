@@ -38,18 +38,16 @@ onMounted(() => {
   <section id="servicos">
     <!-- PARTE 1: COMO FUNCIONA A CONSULTA (NOVO TEMPLATE) -->
     <div class="process-wrapper">
-      <h2>Como funciona a consulta online</h2>
+      <h2>O que esperar da minha consulta:</h2>
 
       <!-- Removemos o .process-grid e usamos um novo layout -->
       <div class="process-layout">
         <!-- CARD 1 (Vem da Direita) -->
         <div ref="card1" class="process-row slide-from-right">
           <div class="process-text">
-            <h4>1. Avaliação Detalhada</h4>
+            <h4>1. Entender</h4>
             <p>
-              A primeira consulta tem duração média de 1 hora, focada em uma
-              avaliação clínica completa, investigando seu histórico de vida e
-              sintomas atuais. As consultas seguintes duram em média 50 minutos.
+              Na primeira sessão, que costuma durar cerca de uma hora, realizo uma avaliação minuciosa da sua história, do padrão dos sintomas, do contexto emocional e dos fatores que sustentam o quadro atual. Nada é interpretado de forma fragmentada. A compreensão clínica nasce da integração de todas as dimensões da sua experiência.
             </p>
           </div>
           <div class="process-image">
@@ -68,11 +66,9 @@ onMounted(() => {
         <!-- CARD 2 (Vem da Esquerda) -->
         <div ref="card2" class="process-row slide-from-left">
           <div class="process-text">
-            <h4>2. Diagnóstico e Plano Terapêutico</h4>
+            <h4>2. Direcionar</h4>
             <p>
-              Com base na avaliação, é feita a formulação de uma hipótese
-              diagnóstica. Inclui prescrição médica com assinatura digital,
-              válida em todo o país.
+              Com base no que identificarmos, definimos juntos a conduta terapêutica mais adequada, incluindo medicação quando indicada, psicoterapia, intervenções comportamentais e orientações práticas. As prescrições são emitidas digitalmente e têm validade nacional, garantindo agilidade e acesso imediato sem deslocamentos desnecessários.
             </p>
           </div>
           <div class="process-image">
@@ -89,11 +85,9 @@ onMounted(() => {
         <!-- CARD 3 (Vem da Direita) -->
         <div ref="card3" class="process-row slide-from-right">
           <div class="process-text">
-            <h4>3. Acompanhamento Contínuo</h4>
+            <h4>3. Acompanhar</h4>
             <p>
-              O acompanhamento é individualizado, com um canal de contato
-              disponível para dúvidas e intercorrências entre as consultas,
-              garantindo um cuidado próximo e humanizado.
+              A evolução é monitorada com atenção contínua, ajustando o tratamento conforme sua resposta e necessidades. Você dispõe de um canal de contato* para esclarecer dúvidas pontuais entre consultas, preservando estabilidade e segurança ao longo do processo. A meta é avanço clínico concreto, não apenas manutenção.
             </p>
           </div>
           <div class="process-image">
@@ -119,7 +113,7 @@ onMounted(() => {
       <div class="specialties-grid">
         <!-- Card 1: Ansiedade -->
         <div class="specialty-card">
-          <span class="card-icon">🌀</span>
+          <span class="card-icon"></span>
           <h4>Ansiedade e Pânico</h4>
           <p>
             Cuidado para Transtorno de Ansiedade Generalizada (TAG), Transtorno

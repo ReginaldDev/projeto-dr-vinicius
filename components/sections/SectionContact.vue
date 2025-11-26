@@ -55,6 +55,8 @@
     >
       Agendar sua consulta agora
     </a>
+    <br><br>
+    <cite>*Respostas em até vinte e quatro horas. Em situações de urgência, procure atendimento imediato.</cite>
   </section>
 </template>
 
