@@ -105,94 +105,104 @@ onMounted(() => {
 
     <!-- PARTE 2: ÁREAS DE ATUAÇÃO (SEU TEMPLATE ANTIGO, QUE ESTÁ CORRETO) -->
     <div class="specialties-wrapper">
-      <h2>Principais áreas de atuação</h2>
+      <h2>Como posso te ajudar</h2>
       <p class="section-subtitle">
-        Atendimento especializado para diversas condições de saúde mental.
+        Temas mais procurados e avaliados com cuidado individual e rigor clínico
       </p>
 
       <div class="specialties-grid">
         <!-- Card 1: Ansiedade -->
         <div class="specialty-card">
-          <span class="card-icon"></span>
-          <h4>Ansiedade e Pânico</h4>
+          <span class="card-icon">
+            <img src="/img/ansiedade.png" alt="Ansiedade Icone">
+          </span>
+          <h4>Ansiedade Intensa</h4>
           <p>
-            Cuidado para Transtorno de Ansiedade Generalizada (TAG), Transtorno
-            do Pânico e fobias.
+            Identificação de gatilhos e padrões que sustentam o quadro. 
           </p>
         </div>
 
         <!-- Card 2: Depressão -->
         <div class="specialty-card">
-          <span class="card-icon">💧</span>
-          <h4>Depressão</h4>
+          <span class="card-icon">
+            <img src="/img/depression.png" alt="Depressão Icone">
+          </span>
+          <h4>Depressão Persistente</h4>
           <p>
-            Tratamento para episódios depressivos, distimia e outros transtornos
-            de humor.
+            Revisão do histórico e construção de plano combinado para restaurar funcionalidade e equilibrar o ritmo emocional.
           </p>
         </div>
 
-        <!-- Card 3: Bipolar -->
+        
+        <!-- Card 3: TDAH (Destaque do Doctoralia) -->
         <div class="specialty-card">
-          <span class="card-icon">🎭</span>
-          <h4>Transtorno Bipolar</h4>
+          <span class="card-icon">
+            <img src="/img/deficit.png" alt="Depressão Icone">
+          </span>
+          <h4>Déficit de Atenção em Adultos</h4>
           <p>
-            Manejo e estabilização do humor, focado na qualidade de vida do
-            paciente.
+            Diferenciação entre TDAH verdadeiro e sobrecarga, estresse ou ansiedade. Manejo ajustado à rotina e demandas profissionais.
           </p>
         </div>
 
-        <!-- Card 4: TDAH (Destaque do Doctoralia) -->
+        <!-- Card 4: Bipolar -->
         <div class="specialty-card">
-          <span class="card-icon">🧠</span>
-          <h4>TDAH</h4>
+          <span class="card-icon">
+            <img src="/img/bipolar.png" alt="">
+          </span>
+          <h4>Oscilações de Humor e Bipolaridade</h4>
           <p>
-            Serviço focado no diagnóstico e tratamento do Transtorno de Déficit
-            de Atenção e Hiperatividade.
+            Avaliação longitudinal de ciclos e variações de humor, com estratégias específicas para fase clínica.
           </p>
         </div>
 
-        <!-- Card 5: Dependência (Destaque do Doctoralia) -->
+        <!-- Card 5: Impulsos (Destaque do Doctoralia) -->
         <div class="specialty-card">
-          <span class="card-icon">🔄</span>
-          <h4>Dependência Química</h4>
+          <span class="card-icon">
+            <img src="/img/angry2.png" alt="">
+          </span>
+          <h4>Controle de Impulsos e Emoções Intensas</h4>
           <p>
-            Atendimento especializado no uso de substâncias químicas e outros
-            vícios.
+            Redução da reatividade, melhoria da tomada de decisão e fortalecimento de recursos internos.
           </p>
         </div>
 
-        <!-- Card 6: Esquizofrenia -->
+        <!-- Card 6: Insônia -->
         <div class="specialty-card">
-          <span class="card-icon">🗣️</span>
-          <h4>Esquizofrenia</h4>
+          <span class="card-icon">
+            <img src="/img/insomnia.png" alt="">
+          </span>
+          <h4>Insônia e sono Irregular</h4>
           <p>
-            Acompanhamento e tratamento de transtornos psicóticos, incluindo
-            esquizofrenia.
+            Análise de hábitos, medicações e fatores emocionais. Plano individualizado para qualidade e regularidade do sono.
           </p>
         </div>
 
-        <!-- Card 7: Transtornos Alimentares -->
+        <!-- Card 7: Uso problemático de álcool e drogas -->
         <div class="specialty-card">
-          <span class="card-icon">🍽️</span>
-          <h4>Transtornos Alimentares</h4>
+          <span class="card-icon">
+            <img src="/img/alcohol.png" alt="">
+          </span>
+          <h4>Uso problemático de Álcool e Drogas</h4>
           <p>
-            Cuidado para anorexia, bulimia e transtorno de compulsão alimentar.
+            Avaliação do padrão de uso, riscos e impacto na vida. Manejo focado em redução de danos e prevenção de recaídas.
           </p>
         </div>
 
-        <!-- Card 8: Personalidade -->
+        <!-- Card 8: Traumas e TEPT -->
         <div class="specialty-card">
-          <span class="card-icon">👤</span>
-          <h4>Transtornos de Personalidade</h4>
-          <p>Abordagem para condições como Borderline, Narcisismo e outras.</p>
+          <span class="card-icon">
+            <img src="/img/sad.png" alt="">
+          </span>
+          <h4>Trauma psicológico e TEPT</h4>
+          <p>Exploração de sintomas intrusivos, hipervigilância e impacto emocional dos eventos. Cuidado seguro, ajustado ao seu ritmo.</p>
         </div>
 
         <!-- Card 9: CTA Doctoralia -->
         <div class="specialty-card cta-card">
-          <h4>E muito mais</h4>
+          <h4>E outros Temas também</h4>
           <p>
-            Outras condições, como Transtornos do Espectro Autista e Insônia,
-            podem ser consultados no perfil.
+            Esquizofrenia, TEA, fobias, luto, transtorno alimentares e outros desafios de saúde mental.
           </p>
           <a
             href="https://www.doctoralia.com.br/vinicius-sanches-bersanete/psiquiatra/campinas"
@@ -334,8 +344,19 @@ onMounted(() => {
 }
 
 .card-icon {
-  font-size: 2.5rem;
-  line-height: 1;
+  width: 48px;        /* Tamanho fixo do container do ícone */
+  height: 48px;
+  margin: 0 auto 15px auto;
+  display: flex;      /* Centraliza a imagem */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adicione ou atualize esta regra para pegar a imagem PNG */
+.card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Garante que o ícone caiba sem esticar/deformar */
 }
 
 .specialty-card h4 {

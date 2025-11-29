@@ -8,7 +8,9 @@
 
     <div class="benefits-grid">
       <div class="benefit-card">
-        <div class="card-icon">🏠</div>
+        <div class="card-icon">
+          <img src="/img/right.png" alt="">
+        </div>
         <div class="card-text">
           <h4>Conforto e Privacidade</h4>
           <p>
@@ -19,7 +21,9 @@
       </div>
 
       <div class="benefit-card">
-        <div class="card-icon">📝</div>
+        <div class="card-icon">
+          <img src="/img/right.png" alt="">
+        </div>
         <div class="card-text">
           <h4>Prescrição Digital Válida</h4>
           <p>
@@ -30,7 +34,9 @@
       </div>
 
       <div class="benefit-card">
-        <div class="card-icon">🛡️</div>
+        <div class="card-icon">
+          <img src="/img/right.png" alt="">
+        </div>
         <div class="card-text">
           <h4>Atendimento Sério e Seguro</h4>
           <p>
@@ -41,7 +47,9 @@
       </div>
 
       <div class="benefit-card">
-        <div class="card-icon">💻</div>
+        <div class="card-icon">
+          <img src="/img/right.png" alt="">
+        </div>
         <div class="card-text">
           <h4>Qualidade de Onde Estiver</h4>
           <p>
@@ -52,7 +60,9 @@
       </div>
 
       <div class="benefit-card">
-        <div class="card-icon">🗓️</div>
+        <div class="card-icon">
+          <img src="/img/right.png" alt="">
+        </div>
         <div class="card-text">
           <h4>Agendamento Fácil</h4>
           <p>
@@ -61,14 +71,15 @@
               href="https://www.doctoralia.com.br/vinicius-sanches-bersanete/psiquiatra/aparecida-de-goiania"
               target="_blank"
               class="text-link"
-              >Doctoralia</a
-            >, com total transparência de horários.
+              >Doctoralia</a>, ou <a href="https://wa.me/5511995685893"target="_blank" class="text-link">WhatsApp</a> com total transparência de horários.
           </p>
         </div>
       </div>
 
       <div class="benefit-card">
-        <div class="card-icon">❤️</div>
+        <div class="card-icon">
+          <img src="/img/right.png" alt="">
+        </div>
         <div class="card-text">
           <h4>Escuta Individualizada</h4>
           <p>
@@ -112,9 +123,19 @@
 }
 
 .card-icon {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  color: var(--primary-color);
+  width: 48px;        /* Tamanho fixo do container do ícone */
+  height: 48px;
+  margin: 0 auto 15px auto;
+  display: flex;      /* Centraliza a imagem */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adicione ou atualize esta regra para pegar a imagem PNG */
+.card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Garante que o ícone caiba sem esticar/deformar */
 }
 
 .card-text h4 {
