@@ -1,3 +1,21 @@
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  // Lógica para carregar o script do Widget Doctoralia
+  // Isso garante que o Vue renderize a página primeiro
+  const scriptId = 'zl-widget-s';
+  
+  if (!document.getElementById(scriptId)) {
+    const js = document.createElement('script');
+    js.id = scriptId;
+    js.src = "//platform.docplanner.com/js/widget.js";
+    const fjs = document.getElementsByTagName('script')[0];
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+})
+</script>
+
 <template>
   <section id="depoimentos">
     <h2>O que meus pacientes dizem</h2>
@@ -6,6 +24,7 @@
     </p>
 
     <div class="testimonials-grid">
+      <!-- Card 1 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
           "A consulta foi maravilhosa, e buscar ajuda me fez enxergar um futuro
@@ -19,6 +38,7 @@
         </div>
       </div>
 
+      <!-- Card 2 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
           "Dr. Vinicius Sanches, é um médico de excelência, que possui um grande
@@ -31,19 +51,19 @@
         </div>
       </div>
 
+      <!-- Card 3 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
           "Excelente profissional, me atendeu com prontidão quando mais
           precisei."
         </p>
         <div class="testimonial-author">
-          <span class="author-name"
-            >Paulo Vinícius C. M. de Souza</span
-          >
+          <span class="author-name">Paulo Vinícius C. M. de Souza</span>
           <span class="author-source">Via Doctoralia</span>
         </div>
       </div>
 
+      <!-- Card 4 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
           "Profissional excelente, atencioso, nunca tinha realizado uma consulta
@@ -56,6 +76,7 @@
         </div>
       </div>
 
+      <!-- Card 5 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
           "Médico excelente. Soube me ouvir sem pressa, fez uma anamnese bem
@@ -68,6 +89,7 @@
         </div>
       </div>
 
+      <!-- Card 6 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
           "O Dr. Vinicius se destaca pelo seu profissionalismo e empatia,
@@ -80,6 +102,25 @@
         </div>
       </div>
     </div>
+
+    <!-- WIDGET DOCTORALIA (ADICIONADO AQUI) -->
+    <div class="doctoralia-widget-wrapper">
+      <a 
+        id="zl-url" 
+        class="zl-url" 
+        href="https://www.doctoralia.com.br/vinicius-sanches-bersanete/psiquiatra/aparecida-de-goiania" 
+        rel="nofollow" 
+        data-zlw-doctor="vinicius-sanches-bersanete" 
+        data-zlw-type="certificate" 
+        data-zlw-opinion="false" 
+        data-zlw-hide-branding="true" 
+        data-zlw-saas-only="true" 
+        data-zlw-a11y-title="Widget de marcação de consultas médicas"
+      >
+        Vinicius Sanches Bersanete - Doctoralia.com.br
+      </a>
+    </div>
+
   </section>
 </template>
 
@@ -116,8 +157,7 @@
   flex-direction: column;
 }
 
-/* --- NOVO: Esconde do 4º card em diante NO MOBILE --- */
-/* :nth-child(n+4) seleciona o 4º, 5º, 6º, etc. */
+/* Esconde do 4º card em diante NO MOBILE */
 .testimonial-card:nth-child(n + 4) {
   display: none;
 }
@@ -151,15 +191,38 @@
   color: #777;
 }
 
+/* ESTILOS DO WIDGET */
+.doctoralia-widget-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /*overflow: hidden; /* Evita que o widget estoure a tela se for largo */
+}
+
+
+
 /* --- BREAKPOINTS (DESKTOP) --- */
 @media (min-width: 768px) {
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas */
   }
 
-  /* --- NOVO: Re-exibe os cards no desktop --- */
+  .doctoralia-widget-wrapper {
+  transform: scale(1.5);
+  transform-origin: top center;
+  height: 600px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.doctoralia-widget-wrapper iframe {
+  width: 100%;
+}
+  
+  /* Re-exibe os cards no desktop */
   .testimonial-card:nth-child(n + 4) {
-    display: flex; /* Mostra os cards 4, 5, 6 */
+    display: flex;
   }
 }
 
