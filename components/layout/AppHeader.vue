@@ -16,8 +16,8 @@
       <div class="nav-links" :class="{ 'is-open': isMenuOpen }">
         <ul>
           <li @click="closeMenu"><a href="#sobre">Sobre</a></li>
-          <li @click="closeMenu"><a href="#comoFunciona">Como funciona?</a></li>
-          <li @click="closeMenu"><a href="#servicos">Serviços</a></li>
+          <li @click="closeMenu"><a href="#servicos">Como funciona?</a></li>
+          <li @click="closeMenu"><a href="#beneficios">Serviços</a></li>
           <li @click="closeMenu"><a href="#depoimentos">Depoimentos</a></li>
           <li @click="closeMenu"><a href="#contato">Contato</a></li>
         </ul>
