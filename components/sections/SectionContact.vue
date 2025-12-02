@@ -1,8 +1,8 @@
 <template>
   <section id="contato">
-    <h2>Dê o primeiro passo para sua saúde mental</h2>
+    <h2>Transforme seu bem-estar mental com atenção profissional de alto nível</h2>
     <p class="subtitle">
-      Envie uma mensagem para dúvidas ou informações. 
+      Entre em contato para esclarecer dúvidas ou agendar sua consulta com segurança e privacidade. 
     </p>
 
     <form @submit.prevent="onSubmit" class="contact-form">

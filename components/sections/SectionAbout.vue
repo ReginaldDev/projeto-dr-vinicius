@@ -59,6 +59,8 @@
             <li><strong>RQE 136261</strong></li>
           </ul>
         </div>
+        <br>
+        <cite>*O RQE é o registro do CRM que comprova que o médico é um especialista de fato. Obrigatório para divulgação, ele valida a conclusão da residência ou prova de título, garantindo ao paciente segurança, transparência e a certeza da qualificação técnica do profissional. </cite>
       </div>
     </div>
   </section>
