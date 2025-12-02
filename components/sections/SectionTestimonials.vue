@@ -50,8 +50,7 @@ onUnmounted(() => {
       <!-- Card 1 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
-          "A consulta foi maravilhosa, e buscar ajuda me fez enxergar um futuro
-          melhor. O espaço que foi me dado para poder falar sobre meus tramas e
+          "A consulta foi maravilhosa, e buscar ajuda me fez enxergar <strong>um futuro melhor</strong>. O espaço que foi me dado para poder falar sobre meus tramas e
           a atenção, com certeza vai me auxiliar para iniciar esse processo.
           Obrigada Doutor!"
         </p>
@@ -64,7 +63,18 @@ onUnmounted(() => {
       <!-- Card 2 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
-          "Dr. Vinicius Sanches, é um médico de excelência, que possui um grande
+          "Médico maravilhoso, com escuta ativa, que me tratou com extrema empatia e compaixão. Durante toda a consulta, me orientou com clareza e atenção. Se você tem receio de realizar uma consulta on-line, saiba que com o Dr. Vinicius <strong>não há motivo para preocupação: </strong>ele foi tão acolhedor que parecia uma consulta presencial."
+        </p>
+        <div class="testimonial-author">
+          <span class="author-name">Nelton Henrique</span>
+          <span class="author-source">Via Doctoralia</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Dr. Vinicius Sanches, é um médico de <strong>excelência</strong>, que possui um grande
           conhecimento. Um profissional amoroso, que se preocupa realmente com
           os seus pacientes!! Muito obrigada DR. o senhor é excepcional."
         </p>
@@ -74,23 +84,11 @@ onUnmounted(() => {
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="testimonial-card">
-        <p class="testimonial-text">
-          "Excelente profissional, me atendeu com prontidão quando mais
-          precisei."
-        </p>
-        <div class="testimonial-author">
-          <span class="author-name">Paulo Vinícius C. M. de Souza</span>
-          <span class="author-source">Via Doctoralia</span>
-        </div>
-      </div>
-
       <!-- Card 4 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
-          "Profissional excelente, atencioso, nunca tinha realizado uma consulta
-          on-line e superou minhas expectativas, parabéns ótimo professional
+          "Profissional excelente, <strong>atencioso</strong>, nunca tinha realizado uma consulta
+          on-line e <strong>superou minhas expectativas</strong>, parabéns ótimo professional
           recomendo!"
         </p>
         <div class="testimonial-author">
@@ -102,9 +100,9 @@ onUnmounted(() => {
       <!-- Card 5 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
-          "Médico excelente. Soube me ouvir sem pressa, fez uma anamnese bem
+          "Médico <strong>excelente</strong>. Soube me ouvir sem pressa, fez uma anamnese bem
           detalhada, me deixou a vontade para falar sobre como eu me sentia.
-          Super recomendo. Médico muito humano."
+          <strong>Super recomendo</strong>. Médico muito <strong>humano</strong>."
         </p>
         <div class="testimonial-author">
           <span class="author-name">Ana Paula Araujo</span>
@@ -115,7 +113,7 @@ onUnmounted(() => {
       <!-- Card 6 -->
       <div class="testimonial-card">
         <p class="testimonial-text">
-          "O Dr. Vinicius se destaca pelo seu profissionalismo e empatia,
+          "O Dr. Vinicius se destaca pelo seu <strong>profissionalismo</strong> e <strong>empatia</strong>,
           fazendo uma diferença real no meu tratamento. Gente boa demais, só
           tenho a agradecer!"
         </p>
