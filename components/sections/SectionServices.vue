@@ -53,7 +53,7 @@ onMounted(() => {
           <div class="process-image">
             <!-- Substitua pela imagem que desejar -->
             <NuxtPicture
-              src="/img/avaliacao.jpg"
+              src="/img/doutor1.jpeg"
               alt="Foto de Avaliação Detalhada"
               :img-attrs="{ style: 'width:100%;height:auto;border-radius:8px;' }"
               format="webp"
@@ -73,7 +73,7 @@ onMounted(() => {
           </div>
           <div class="process-image">
             <NuxtPicture
-              src="/img/diagnostico.jpg"
+              src="/img/doutor2.jpeg"
               alt="Foto de Diagnostico"
               :img-attrs="{ style: 'width:100%;height:auto;border-radius:8px;' }"
               format="webp"
@@ -92,7 +92,7 @@ onMounted(() => {
           </div>
           <div class="process-image">
             <NuxtPicture
-              src="/img/acompanhamento.jpg"
+              src="/img/doutor3.jpeg"
               alt="Foto de Acompanhamento Contínuo"
               :img-attrs="{ style: 'width:100%;height:auto;border-radius:8px;' }"
               format="webp"

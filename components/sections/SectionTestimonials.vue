@@ -160,7 +160,7 @@ onUnmounted(() => {
         class="social-image desktop-only slide-from-right"
       >
         <NuxtPicture
-          src="/img/image_consulta3.png"
+          src="/img/image_consulta.png"
           alt="Paciente satisfeito em atendimento online"
           :img-attrs="{ style: 'width:100%; height:100%; object-fit:cover; border-radius: 12px;' }"
           format="webp"

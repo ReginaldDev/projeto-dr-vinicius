@@ -1,6 +1,6 @@
 <template>
   <section id="inicio" class="section-hero">
-    <h1>Sua Dor é real e merece ser acolhida com seriedade e respeito</h1>
+    <h1>Sua Dor é real e merece ser acolhida com respeito</h1>
     <p>Tratamento psiquiátrico especializado, técnico e humanizado. Agende sua consulta online e dê o primeiro passo para o seu bem-estar</p>
     <a
       href="https://www.doctoralia.com.br/vinicius-sanches-bersanete/psiquiatra/aparecida-de-goiania?utm_id=772678&utm_source=widget-doctor-772678&utm_medium=big-with-opinion&utm_campaign=&utm_content=#highlight-calendar"

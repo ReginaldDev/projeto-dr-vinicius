@@ -64,7 +64,7 @@
 import { ref } from "vue";
 
 // --- CONFIGURAÇÃO DO FORMULÁRIO ---
-const accessKey = "COLE_SUA_ACCESS_KEY_DO_WEB3FORMS_AQUI";
+const accessKey = "6f93b367-4081-4756-a253-31785739dd3c";
 
 // Reatividade dos dados do formulário
 const formData = ref({

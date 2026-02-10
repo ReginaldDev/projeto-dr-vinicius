@@ -187,6 +187,7 @@ onUnmounted(() => {
   margin-bottom: 30px;
 }
 .nav-links a {
+  color: #343180;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;

@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       title: 'Dr. Vinicius Sanches Bersanete - Psiquiatra', // Título padrão
       link: [
         // O link para o seu favicon SVG
-        { rel: 'icon', type: 'image/png', href: '/logoIcon2.png' }
+        { rel: 'icon', type: 'image/png', href: '/logoIcon.png' }
       ]
     }
   }
