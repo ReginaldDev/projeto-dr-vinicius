@@ -46,6 +46,10 @@ Build the application for production:
 # npm
 npm run build
 
+or 
+
+npx nuxi generate
+
 # pnpm
 pnpm build
 
